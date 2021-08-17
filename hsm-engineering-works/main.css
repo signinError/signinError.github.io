@@ -893,4 +893,16 @@ img {
   -webkit-transform: translate(-50%, -70%) rotate(-45deg);
           transform: translate(-50%, -70%) rotate(-45deg);
 }
+
+.thanks-container .banner__cta {
+  background-color: #fc5a0a;
+  color: #fff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .thanks-container {
+    padding: 0 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
