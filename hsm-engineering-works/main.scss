@@ -644,8 +644,8 @@ img {
         }
         &.textarea-input {
             width: 600px;
-            height: 120px;
-            margin-bottom: 50px;
+            // height: 120px;
+            margin-bottom: 20px;
             & textarea {
                 overflow-wrap: break-word;
                 outline: 0;
@@ -682,7 +682,9 @@ img {
         }
     }
     & .form-cta {
-        padding: 10px 16px;
+        outline: none;
+        border: none;
+        padding: 15px 16px;
         width: 100px;
         text-align: center;
         background-color: #fc5a0a;
@@ -717,4 +719,35 @@ img {
             margin-bottom: 20px;
         }
     }
+}
+
+
+.thanks-container {
+    padding: 0 80px;
+
+    & .message {
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .tick {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: green;
+                position: relative;
+                margin-bottom: 30px;
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 12px;
+                    border-left: 3px solid #fff;
+                    border-bottom: 3px solid #fff;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -70%) rotate(-45deg);
+                }
+            }
+        }
 }

@@ -773,8 +773,7 @@ img {
 
 .form-block .form-contact.textarea-input {
   width: 600px;
-  height: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .form-block .form-contact.textarea-input textarea {
@@ -814,7 +813,9 @@ img {
 }
 
 .form-block .form-cta {
-  padding: 10px 16px;
+  outline: none;
+  border: none;
+  padding: 15px 16px;
   width: 100px;
   text-align: center;
   background-color: #fc5a0a;
@@ -851,5 +852,45 @@ img {
   .form-block .form-cta {
     margin-bottom: 20px;
   }
+}
+
+.thanks-container {
+  padding: 0 80px;
+}
+
+.thanks-container .message {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thanks-container .message .tick {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.thanks-container .message .tick::before {
+  content: '';
+  width: 20px;
+  height: 12px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%) rotate(-45deg);
+          transform: translate(-50%, -70%) rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */
