@@ -708,6 +708,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .gallery {
+    padding: 20px 0 0 0;
+  }
   .gallery-container {
     padding: 0 20px;
   }
@@ -942,7 +945,6 @@ img {
   color: #1e1d24;
   padding: 10px 20px;
   border-radius: 8px;
-  font-weight: 800;
 }
 
 @media screen and (max-width: 768px) {
