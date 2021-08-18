@@ -905,4 +905,195 @@ img {
     padding: 0 20px;
   }
 }
+
+.bike-prj {
+  position: fixed;
+  top: 80px;
+  right: 100px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 800;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.bike-prj__text {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.bike-prj__cta {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #1e1d24;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .bike-prj {
+    top: 124px;
+    width: 100vw;
+    left: 0px;
+    height: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: transparent;
+    color: #fff;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .bike-prj__text {
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  .bike-prj__cta {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+}
+
+.project-container {
+  padding: 40px 80px;
+  height: auto;
+  overflow: auto;
+  padding-bottom: 250px;
+}
+
+.project-container .container .details {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+}
+
+.project-container .container .details-img {
+  height: 400px;
+  width: 40%;
+  background: url("assets/images/bike-3.jpeg") no-repeat center center/cover;
+  -webkit-box-shadow: 0px 1px 0px 1px rgba(68, 68, 68, 0.4);
+          box-shadow: 0px 1px 0px 1px rgba(68, 68, 68, 0.4);
+  border-radius: 6px;
+}
+
+.project-container .container .details-text {
+  width: 55%;
+  font-size: 18px;
+}
+
+.project-container .form-container {
+  margin-top: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.project-container .form-container .form-contact {
+  margin-top: 20px;
+  width: 400px;
+  height: 50px;
+  text-align: left;
+}
+
+.project-container .form-container .form-contact input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: #d7d7d7;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.project-container .form-container .form-contact input:focus {
+  background-color: transparent;
+  color: #1e1d24;
+  border: 1px solid #d7d7d7;
+}
+
+.project-container .form-container .form-contact .form-checkbox {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.project-container .form-container .form-contact .form-checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+.project-container .form-container .form-contact .form-cta {
+  outline: none;
+  border: none;
+  margin-top: 40px;
+  padding: 15px 16px;
+  width: 100px;
+  text-align: center;
+  background-color: #fc5a0a;
+  color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 0px 1px rgba(252, 90, 10, 0.6);
+          box-shadow: 0px 1px 0px 1px rgba(252, 90, 10, 0.6);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.project-container .form-container .form-contact .form-cta:hover {
+  border: 1px solid #fc5a0a;
+  background-color: transparent;
+  color: #fc5a0a;
+}
+
+.project-container .form-container .form-contact .form-cta.cancel {
+  margin-left: 40px;
+}
 /*# sourceMappingURL=main.css.map */

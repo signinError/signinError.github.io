@@ -761,3 +761,154 @@ img {
         padding: 0 20px;
     }
 }
+
+
+.bike-prj {
+    position: fixed;
+    top: 80px;
+    right: 100px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    background-color: #fff;
+    padding: 0 10px;
+    &__text {
+        font-weight: 800;
+        text-transform: capitalize;
+    }
+    &__cta {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #1e1d24;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bike-prj {
+        top: 124px;
+        width: 100vw;
+        left: 0px;
+        height: 60px;
+        flex-direction: row;
+        background-color: transparent;
+        color: #fff;
+        column-gap: 40px;
+        border: none;
+        box-shadow: none;
+        &__text {
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        &__cta {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+// project details of bike
+.project-container {
+    padding: 40px 80px;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 250px;
+    & .container {
+        & .details {
+            margin-top: 40px;
+            display: flex;
+            // justify-content: space-between;
+            height: auto;
+            column-gap: 60px;
+            &-img {
+                height: 400px;
+                width: 40%;
+                background: url('assets/images/bike-3.jpeg') no-repeat center center/cover;
+                box-shadow: 0px 1px 0px 1px rgba(#444, 0.4);
+                border-radius: 6px;
+            }
+            &-text {
+                width: 55%;
+                font-size: 18px;
+            }
+        }
+    }
+    & .form-container {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        & .form-contact {
+            margin-top: 20px;
+            width: 400px;
+            height: 50px;
+            text-align: left;
+            & input {
+                width: 100%;
+                height: 100%;
+                outline: none;
+                border: none;
+                background-color: #d7d7d7;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                &:focus {
+                    background-color: transparent;
+                    color: #1e1d24;
+                    border: 1px solid #d7d7d7;
+                }
+            }
+            & .form-checkbox {
+                margin-top: 12px;
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+                & input {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            & .form-cta {
+                outline: none;
+                border: none;
+                margin-top: 40px;
+                padding: 15px 16px;
+                width: 100px;
+                text-align: center;
+                background-color: #fc5a0a;
+                color: #fff;
+                border-radius: 4px;
+                box-shadow: 0px 1px 0px 1px rgba($color: #fc5a0a, $alpha: 0.6);
+                cursor: pointer;
+                display: inline-block;
+                &:hover {
+                    border: 1px solid #fc5a0a;
+                    background-color: transparent;
+                    color: #fc5a0a;
+                }
+                &.cancel {
+                    margin-left: 40px;
+                }
+            }
+        }
+        
+    }
+}
