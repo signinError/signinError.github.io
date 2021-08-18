@@ -912,3 +912,30 @@ img {
         
     }
 }
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        padding: 0 20px;
+        padding-bottom: 250px;
+        & .container {
+            & .details {
+                flex-direction: column;
+                &-img {
+                    width: 100%;
+                    height: 300px;
+                }
+                &-text {
+                    width: 100%;
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }
+            & .form-container {
+                width: 100%;
+                & .form-contact {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
